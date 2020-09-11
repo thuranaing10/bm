@@ -10,3 +10,7 @@ Route::get('facebook', function () {
 Route::get('auth/facebook', 'Auth\FacebookController@redirectToFacebook');
 Route::get('auth/facebook/callback', 'Auth\FacebookController@handleFacebookCallback');
 
+Route::get('/welcome',function(){
+	return view('welcome');
+});
+
